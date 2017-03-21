@@ -8,6 +8,10 @@
         <servlet-name>mostrar</servlet-name>
         <servlet-class>controlador.mostrar</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>editar</servlet-name>
+        <servlet-class>controlador.editar</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Recibir</servlet-name>
         <url-pattern>/recibir.do</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>mostrar</servlet-name>
         <url-pattern>/mostrar.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>editar</servlet-name>
+        <url-pattern>/editar</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

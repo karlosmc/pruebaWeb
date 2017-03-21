@@ -6,6 +6,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -31,16 +32,17 @@
                       <td>${lista.codalumno}</td>
                       <td>${lista.nombrealumno}</td>
                       <td>${lista.apellido}</td>
+                    
                       <td>
-                          <form action="editar.do" method="POST">
-                              <input type="submit" value="editar" id=${lista.codalumno}
-                          </form>
+                          <a href="editar?codalumno="${lista.codalumno}> Editar</a>
+                          
                       </td>
-                       <td>
-                          <form action="eliminar.do" method="POST">
-                              <input type="submit" value="eliminar" id=${lista.codalumno}
-                          </form>
+                      <td>
+                          
+                          <a href="eliminar?codalumno="${lista.codalumno}> Eliminar</a>
                       </td>
+                      
+                     
                   </tr>
                   </c:forEach>
              </tbody>     

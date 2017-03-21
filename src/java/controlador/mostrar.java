@@ -34,7 +34,7 @@ public class mostrar extends HttpServlet {
         
         Alumno al=new Alumno();
         ArrayList<Alumno> Alumnos=new ArrayList<>();
-        Alumnos=al.consultar();
+        Alumnos=al.Consultar();
         request.getSession().setAttribute("alumnos", Alumnos);
         request.getRequestDispatcher("mostrartodos.jsp").forward(request, response);
         
